@@ -11,13 +11,13 @@ int main(){
    printf("Press C to convert C to F\n");
    printf("Is the temp in C or F: ");
    scanf("%c", &choice);
-   if(choice == 'c'){
+   if(choice == 'c' || choice == 'C'){
     printf("enter the temp in celsius: ");
     scanf("%f", &celsius);
     farheneit = (9.0f / 5.0f * celsius) + 32;
     printf("%.2f celsius is %.2f farheneit", celsius, farheneit);
    }
-   else if(choice == 'f'){
+   else if(choice == 'f' || choice == 'F'){
 printf("enter the temp in farheneit: ");
 scanf("%f", &farheneit);
 celsius = 5.0f / 9.0f * (farheneit - 32);
